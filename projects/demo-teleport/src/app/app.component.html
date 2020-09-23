@@ -1,11 +1,9 @@
 <router-outlet></router-outlet>
 <div style="border: solid; width: 100%; height: 50px">
-  Container 1
-  <span *dTeleport="'text'">Teleported content</span>
+  Teleport from here:
+  <span *doTeleport="'text'">Teleported content</span>
 </div>
 <div style="border: solid; width: 100%; height: 50px">
-  Container 2
-  <d-teleport name="text"></d-teleport>
+  To here:
+  <do-teleport name="text"></do-teleport>
 </div>
-
-

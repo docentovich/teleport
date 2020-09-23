@@ -8,7 +8,7 @@ export interface TeleportInstance {
 @Injectable({
   providedIn: "root",
 })
-export class TeleportService extends BehaviorSubject<TeleportInstance> {
+export class DoTeleportService extends BehaviorSubject<TeleportInstance> {
   constructor() {
     super(null);
   }

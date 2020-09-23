@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TeleportModule } from 'teleport/teleport.module';
+import { DoTeleportModule } from 'do-teleport/do-teleport.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { TeleportModule } from 'teleport/teleport.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TeleportModule
+    DoTeleportModule
   ],
   providers: [],
   bootstrap: [AppComponent]

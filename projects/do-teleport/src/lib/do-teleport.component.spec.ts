@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TeleportComponent } from './teleport.component';
+import { DoTeleportComponent } from './do-teleport.component';
 
 describe('TeleportComponent', () => {
-  let component: TeleportComponent;
-  let fixture: ComponentFixture<TeleportComponent>;
+  let component: DoTeleportComponent;
+  let fixture: ComponentFixture<DoTeleportComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TeleportComponent ]
+      declarations: [ DoTeleportComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TeleportComponent);
+    fixture = TestBed.createComponent(DoTeleportComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -16,10 +16,10 @@
       "dom"
     ],
     "paths": {
-      "teleport/*": ["projects/teleport/src/lib/*"],
-      "teleport": [
-        "dist/teleport/teleport",
-        "dist/teleport"
+      "do-teleport/*": ["projects/do-teleport/src/lib/*"],
+      "do-teleport": [
+        "dist/do-teleport/do-teleport",
+        "dist/do-teleport"
       ]
     }
   },

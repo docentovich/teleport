@@ -6,18 +6,18 @@ import {
   SimpleChanges,
   TemplateRef,
 } from "@angular/core";
-import { TeleportService } from "./teleport.service";
+import { DoTeleportService } from "./do-teleport.service";
 
 @Directive({
-  selector: "[dTeleport]",
+  selector: "[doTeleport]",
 })
-export class TeleportDirective implements OnChanges, OnDestroy {
+export class DoTeleportDirective implements OnChanges, OnDestroy {
   constructor(
-    private teleport: TeleportService,
+    private teleport: DoTeleportService,
     private template: TemplateRef<any>
   ) {}
 
-  @Input("dTeleport") target: string;
+  @Input("doTeleport") target: string;
 
   ngOnChanges(changes: SimpleChanges) {
     const target = changes.target;

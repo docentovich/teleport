@@ -3,30 +3,30 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "teleport": {
+    "do-teleport": {
       "projectType": "library",
-      "root": "projects/teleport",
-      "sourceRoot": "projects/teleport/src",
+      "root": "projects/do-teleport",
+      "sourceRoot": "projects/do-teleport/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/teleport/tsconfig.lib.json",
-            "project": "projects/teleport/ng-package.json"
+            "tsConfig": "projects/do-teleport/tsconfig.lib.json",
+            "project": "projects/do-teleport/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/teleport/tsconfig.lib.prod.json"
+              "tsConfig": "projects/do-teleport/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/teleport/src/test.ts",
-            "tsConfig": "projects/teleport/tsconfig.spec.json",
-            "karmaConfig": "projects/teleport/karma.conf.js"
+            "main": "projects/do-teleport/src/test.ts",
+            "tsConfig": "projects/do-teleport/tsconfig.spec.json",
+            "karmaConfig": "projects/do-teleport/karma.conf.js"
           }
         },
         "lint": {
