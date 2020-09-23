@@ -1,7 +1,30 @@
 <router-outlet></router-outlet>
+<h2>1</h2>
 <div style="border: solid; width: 100%; height: 50px">
   Teleport from here:
-  <span *doTeleport="'text'">Teleported content</span>
+  <span *doTeleport="'text'">Teleported content 1</span>
+</div>
+<div style="border: solid; width: 100%; height: 50px">
+  To here:
+  <do-teleport name="text"></do-teleport>
+</div>
+
+<hr>
+<h2>2</h2>
+<div style="border: solid; width: 100%; height: 50px">
+  Teleport from here:
+  <span *doTeleport="'text1'">Teleported content 2</span>
+</div>
+<div style="border: solid; width: 100%; height: 50px">
+  To here:
+  <do-teleport name="text1"></do-teleport>
+</div>
+
+<hr>
+<h2>3</h2>
+<div style="border: solid; width: 100%; height: 50px">
+  Teleport contet from here should replace first one:
+  <span *doTeleport="'text'">Teleported content 3</span>
 </div>
 <div style="border: solid; width: 100%; height: 50px">
   To here:

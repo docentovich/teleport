@@ -14,7 +14,8 @@ export class DoTeleportService extends BehaviorSubject<TeleportInstance> {
   }
 
   public activate(instance: TeleportInstance) {
-    this.next(instance);
+    const newValue = { ...this.value, ...instance }
+    this.next(newValue);
   }
 
   public clearAll() {
